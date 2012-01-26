@@ -1,0 +1,71 @@
+/* This css document corresponds to the database.php page*/
+
+.table1{position:absolute; left:300px; top:65px; border:1px solid blue;}
+
+.table2{position:absolute; left:400px; top:65px; border:1px solid blue;}
+
+.table3{position:absolute; left:5px; top:285px; border:1px solid blue;}
+
+.table4{position:absolute; left:5px; top:270px; border: 1px solid blue;}
+
+.table5{position:absolute; left:5px; top:235px; border: 1px solid blue;}
+
+.table6{position:absolute; left:5px; top:75px; border: 1px solid blue;}
+
+h2{position:absolute; left:90px; top:230px;}
+
+h1{position:absolute; left: 5px; top:25px;}
+
+form { position: absolute; left:5px; top:65px;}
+
+label { width: 4em; float: left; text-align: right; margin-right: 0.5em; display: block}
+
+.submit input { margin-left: 5.5em;} 
+
+input { color: #000000; background: #fee3ad; border: 1px solid black;}
+
+.submit input { color: #000; background: #ffa20f; border: 2px outset #d7b9c9}
+ 
+legend {color: #000000;  background:#ffa20c; padding: 2px 6px}
+
+ul#list-nav {
+position:absolute;
+top:0px;
+left:5px;
+list-style:none;
+padding:0;
+width:525px
+}
+
+ul#list-nav li {
+display:inline
+}
+
+ul#list-nav li a {
+text-decoration:none;
+padding:5px 0;
+width:100px;
+background:#485e49;
+color:#eee;
+float:left;
+text-align:center;
+border-left:1px solid #fff;
+}
+
+ul#list-nav li a:hover {
+background:#a2b3a1;
+color:#000
+}
+
+.pic{position:absolute; left:5px; top:90px;}
+
+.pic1{position:absolute; left:205px; top:90px;}
+.pic2{position:absolute; left:405px; top:90px;}
+.pic3{position:absolute; left:605px; top:90px;}
+.pic4{position:absolute; left:5px; top:290px;}
+.pic5{position:absolute; left:205px; top:290px;}
+.pic6{position:absolute; left:405px; top:290px;}
+.dog{position:absolute; left:605px; top:290px;}
+.pic7{position:absolute; left:205px; top:490px;}
+.pic8{position:absolute; left:405px; top:490px;}
+
