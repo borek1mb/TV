@@ -39,6 +39,7 @@ $num1=mysql_numrows($result1);
 </tr>
 
 <?php
+// adding comment pure nigga style
 $t=0;
 while ($t < $num1) {
 $field1_name=mysql_result($result1,$t,"firtName");
