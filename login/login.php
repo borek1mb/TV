@@ -1,8 +1,12 @@
  <?php 
 
  // Connects to your Database 
-
- mysql_connect("localhost", "root", "golfing25") or die(mysql_error()); 
+// DEBUG
+file_put_contents('/var/log/bitleap.log', '$_SESSION: '.var_export($_SESSION, true)."\n\n", FILE_APPEND);
+$_SESSION['is_logged_in'] = true;
+// DEBUG
+file_put_contents('/var/log/bitleap.log', '$_SESSION: '.var_export($_SESSION, true)."\n\n", FILE_APPEND);
+ mysql_connect("127.0.0.1", "root", "lipsc9743") or die(mysql_error()); 
 
  mysql_select_db("tigers") or die(mysql_error()); 
 
@@ -139,35 +143,18 @@ else
  // if they are not logged in 
 
  ?> 
-
- <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post"> 
-
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+</head>
+<body>
+	<div id="form_holder" align="center">
+<img src="/images/sample.png"/>
  <table border="0"> 
 
- <tr><td colspan=2><h1>Login</h1></td></tr> 
-
- <tr><td>Username:</td><td> 
-
- <input type="text" name="username" maxlength="40"> 
-
- </td></tr> 
-
- <tr><td>Password:</td><td> 
-
- <input type="password" name="pass" maxlength="50"> 
-
- </td></tr> 
-
- <tr><td colspan="2" align="right"> 
-
- <input type="submit" name="submit" value="Login"> 
-
- </td></tr> 
-
- </table> 
-
- </form> 
-
+</div>
+</body>
+</html>
  <?php 
 
  } 
