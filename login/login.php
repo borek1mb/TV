@@ -1,11 +1,6 @@
  <?php 
 
  // Connects to your Database 
-// DEBUG
-file_put_contents('/var/log/bitleap.log', '$_SESSION: '.var_export($_SESSION, true)."\n\n", FILE_APPEND);
-$_SESSION['is_logged_in'] = true;
-// DEBUG
-file_put_contents('/var/log/bitleap.log', '$_SESSION: '.var_export($_SESSION, true)."\n\n", FILE_APPEND);
  mysql_connect("localhost", "root", "golfing25") or die(mysql_error()); 
 
  mysql_select_db("tigers") or die(mysql_error()); 
@@ -152,6 +147,29 @@ else
 <img src="/images/sample.png"/>
  <table border="0"> 
 
+	 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post"> 
+
+ <tr><td>Username:</td><td> 
+
+ <input type="text" name="username" maxlength="40"> 
+
+ </td></tr> 
+
+ <tr><td>Password:</td><td> 
+
+ <input type="password" name="pass" maxlength="50"> 
+
+ </td></tr> 
+
+ <tr><td colspan="2" align="right"> 
+
+ <input type="submit" name="submit" value="Login"> 
+
+ </td></tr> 
+
+ </table> 
+
+ </form> 
 </div>
 </body>
 </html>
