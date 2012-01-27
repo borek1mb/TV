@@ -129,5 +129,6 @@ $i++;
 }
 ?>
 
+<a href=./login/logout.php>Logout</a>
 
 </body></html>
