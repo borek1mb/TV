@@ -6,7 +6,7 @@ file_put_contents('/var/log/bitleap.log', '$_SESSION: '.var_export($_SESSION, tr
 $_SESSION['is_logged_in'] = true;
 // DEBUG
 file_put_contents('/var/log/bitleap.log', '$_SESSION: '.var_export($_SESSION, true)."\n\n", FILE_APPEND);
- mysql_connect("127.0.0.1", "root", "lipsc9743") or die(mysql_error()); 
+ mysql_connect("localhost", "root", "golfing25") or die(mysql_error()); 
 
  mysql_select_db("tigers") or die(mysql_error()); 
 
